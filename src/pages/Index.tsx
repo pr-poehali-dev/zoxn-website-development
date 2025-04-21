@@ -16,13 +16,13 @@ const Index = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Откройте для себя <span className="text-zoxn">ZOXN</span>
+              Откройте для себя <span className="text-red-500">ZOXN</span>
             </h1>
             <p className="text-lg text-gray-300 max-w-lg">
               Инновационное приложение, которое изменит ваше представление о современных технологиях
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-zoxn hover:bg-zoxn-dark text-white">
+              <Button className="bg-red-600 hover:bg-red-700 text-white">
                 <Download className="w-4 h-4 mr-2" />
                 Скачать ZOXN
               </Button>
@@ -33,9 +33,9 @@ const Index = () => {
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-zoxn/10 rounded-full flex items-center justify-center">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-zoxn/30 to-transparent"></div>
-              <span className="text-5xl md:text-6xl font-bold text-zoxn">ZOXN</span>
+            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-red-600/10 rounded-full flex items-center justify-center">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-red-600/30 to-transparent"></div>
+              <span className="text-5xl md:text-6xl font-bold text-red-500">ZOXN</span>
             </div>
           </div>
         </div>
@@ -47,22 +47,22 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Почему выбирают ZOXN</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-800 hover:shadow-md transition-shadow">
-              <div className="bg-zoxn/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Zap className="text-zoxn w-6 h-6" />
+              <div className="bg-red-600/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Zap className="text-red-500 w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Молниеносная скорость</h3>
-              <p className="text-gray-300">Работает быстрее, чем вы успеваете моргнуть. Никаких задержек и зависаний.</p>
+              <h3 className="text-xl font-semibold mb-2">Лучшие читы</h3>
+              <p className="text-gray-300">Получите преимущество в любой игре с нашими продвинутыми читами. Конкуренты не знают, что их ждёт.</p>
             </div>
             <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-800 hover:shadow-md transition-shadow">
-              <div className="bg-zoxn/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Shield className="text-zoxn w-6 h-6" />
+              <div className="bg-red-600/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Shield className="text-red-500 w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Надежная защита</h3>
               <p className="text-gray-300">Ваши данные в безопасности с нашей продвинутой системой шифрования.</p>
             </div>
             <div className="bg-gray-900 p-6 rounded-lg shadow-sm border border-gray-800 hover:shadow-md transition-shadow">
-              <div className="bg-zoxn/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                <Cpu className="text-zoxn w-6 h-6" />
+              <div className="bg-red-600/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                <Cpu className="text-red-500 w-6 h-6" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Умные технологии</h3>
               <p className="text-gray-300">ИИ-алгоритмы обучаются вашим привычкам для персонализированного опыта.</p>
@@ -78,7 +78,7 @@ const Index = () => {
           <p className="text-lg text-gray-300 max-w-lg mx-auto mb-8">
             Скачайте ZOXN сейчас и присоединитесь к миллионам довольных пользователей
           </p>
-          <Button className="bg-zoxn hover:bg-zoxn-dark text-white px-8 py-6 text-lg">
+          <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg">
             <Download className="w-5 h-5 mr-2" />
             Скачать ZOXN
           </Button>
