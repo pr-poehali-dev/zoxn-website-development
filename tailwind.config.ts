@@ -63,9 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				zoxn: {
-					DEFAULT: '#8B5CF6',
-					light: '#E5DEFF',
-					dark: '#6E59A5'
+					DEFAULT: '#EA384C',
+					light: '#FFE5E8',
+					dark: '#C01D2E'
 				}
 			},
 			borderRadius: {
