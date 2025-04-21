@@ -1,20 +1,24 @@
 import NavBar from "@/components/NavBar";
+import StarAnimation from "@/components/StarAnimation";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Download, Cpu, Shield, Zap } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-black">
+    <div className="min-h-screen flex flex-col bg-black text-white relative overflow-hidden">
+      {/* Анимация звезд на заднем плане */}
+      <StarAnimation />
+      
       <NavBar />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-24 container animate-fade-in">
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 container relative z-10 animate-fade-in">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
               Откройте для себя <span className="text-zoxn">ZOXN</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-lg">
+            <p className="text-lg text-gray-300 max-w-lg">
               Инновационное приложение, которое изменит ваше представление о современных технологиях
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -22,14 +26,14 @@ const Index = () => {
                 <Download className="w-4 h-4 mr-2" />
                 Скачать ZOXN
               </Button>
-              <Button variant="outline" className="border-black text-black hover:bg-gray-100">
+              <Button variant="outline" className="border-white text-white hover:bg-gray-900">
                 Узнать больше
                 <ChevronRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
           </div>
           <div className="flex-1 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-zoxn-light rounded-full flex items-center justify-center">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-zoxn/10 rounded-full flex items-center justify-center">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-zoxn/30 to-transparent"></div>
               <span className="text-5xl md:text-6xl font-bold text-zoxn">ZOXN</span>
             </div>
@@ -38,7 +42,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-black text-white animate-fade-in">
+      <section className="py-16 bg-black text-white border-t border-gray-800 relative z-10 animate-fade-in">
         <div className="container">
           <h2 className="text-3xl font-bold text-center mb-12">Почему выбирают ZOXN</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -68,10 +72,10 @@ const Index = () => {
       </section>
 
       {/* Download Section */}
-      <section className="py-16 bg-white text-black animate-fade-in">
+      <section className="py-16 bg-black text-white border-t border-gray-800 relative z-10 animate-fade-in">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-6">Готовы начать?</h2>
-          <p className="text-lg text-gray-600 max-w-lg mx-auto mb-8">
+          <p className="text-lg text-gray-300 max-w-lg mx-auto mb-8">
             Скачайте ZOXN сейчас и присоединитесь к миллионам довольных пользователей
           </p>
           <Button className="bg-zoxn hover:bg-zoxn-dark text-white px-8 py-6 text-lg">
@@ -82,7 +86,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-black text-gray-300 mt-auto">
+      <footer className="py-8 bg-black text-gray-300 border-t border-gray-800 mt-auto relative z-10">
         <div className="container text-center">
           <p className="text-sm">© 2023 ZOXN. Все права защищены.</p>
         </div>
